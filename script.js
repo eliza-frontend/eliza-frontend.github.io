@@ -1,6 +1,4 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
-    // ===== Theme Toggle =====
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = themeToggle.querySelector('i');
     
@@ -18,14 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Check saved theme
+    
     if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('dark-mode');
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
     }
     
-    // ===== Mobile Menu =====
+    
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     
@@ -34,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
         
     
-    // ===== Smooth Scrolling =====
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             if (this.getAttribute('href') === '#') return;
